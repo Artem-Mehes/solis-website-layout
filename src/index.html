@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Solis</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+			integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="styles/style.css" />
+	</head>
+	<body>
+		<header id="header" class="header">
+			<div class="header__top-bar top-bar">
+				<div class="top-bar__inner container">
+					<img
+						class="top-bar__logo"
+						src="images/logo.svg"
+						alt="logo"
+					/>
+
+					<nav class="top-bar__nav nav">
+						<ul class="nav__list">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Products</a></li>
+							<li><a href="#">Use Cases</a></li>
+							<li><a href="#">Pricing</a></li>
+							<li><a href="#">Resources</a></li>
+						</ul>
+					</nav>
+
+					<button
+						class="top-bar__theme"
+						id="change-theme-btn"
+					></button>
+				</div>
+			</div>
+<!-- 
+			<div class="header__inner container">
+				<section class="header__info about">
+					<h1 class="about__title">
+						A peer-to-peer stablecoin <span>clearinghouse</span> for
+						the new economy
+					</h1>
+					<p class="about__subtitle">
+						We are bringing real solutions to the payments world by
+						leveraging public blockchains.
+					</p>
+					<a class="about__link" href="#">join now</a>
+				</section>
+			</div> -->
+		</header>
+
+		<!-- <main>
+			<div class="container">
+				<div class="statistic">
+					<article class="statistic__info info">
+						<ul class="info__numbers numbers">
+							<li class="numbers__item">
+								<h2 class="numbers__title">1 tril</h2>
+								<p class="numbers__subtitle">
+									Market cap potential
+								</p>
+							</li>
+							<li class="numbers__item">
+								<h2 class="numbers__title">3.65 mil</h2>
+								<p class="numbers__subtitle">
+									Deposited to platform
+								</p>
+							</li>
+							<li class="numbers__item">
+								<h2 class="numbers__title">12</h2>
+								<p class="numbers__subtitle">Stablecoins</p>
+							</li>
+						</ul>
+
+						<div class="info__text">
+							<p>
+								Solis group is a new venture created with
+								investments from and collaboration with XBTO
+								International, XBTO Ventures and Phil Potter,
+								formerly of bitfinex. Stablehouse is intended to
+								launch a first-of-its-kind clearing house for
+								stablecoins that seeks to promote the next phase
+								of the market’s development.
+							</p>
+							<p>
+								The API-enabled, centralized platform addresses
+								the key issues of inconsistent liquidity,
+								stability and accessibility which are currently
+								preventing the stablecoin market from reaching
+								critical mass.
+							</p>
+							<a class="info__link" href="#">Contact sales</a>
+						</div>
+					</article>
+				</div>
+
+				<ul class="advantages">
+					<li class="advantages__item">
+						<h3 class="advantages__title">
+							Qualified <span>traders</span> and liquidty
+							<span>solutions</span>
+						</h3>
+						<p>
+							Trade easily and efficiently between 12 stablecoins,
+							including USDT, TrueUSD, Dai, Eurs and Gemini
+							Dollar.
+						</p>
+					</li>
+					<li class="advantages__item">
+						<h3 class="advantages__title">
+							Settlement/OTC API and <span>integration</span>
+						</h3>
+						<p>
+							Integrate OTC operations and settlements using our
+							efficient API.
+						</p>
+					</li>
+					<li class="advantages__item">
+						<h3 class="advantages__title">
+							The best <span>payments solutions</span>
+						</h3>
+						<p>
+							For all stablecoin payments, from point-of-sale
+							transactions to website solutions. If you use
+							stablecoins in your business, Stablehouse is for
+							you.
+						</p>
+					</li>
+					<li class="advantages__item">
+						<h3 class="advantages__title">
+							<span>Treasury</span> and <span>returns</span> for
+							stablecoin stores
+						</h3>
+						<p>
+							Automate your stablecoin store with instant payments
+							and on-the-fly conversion between different
+							stablecoins.
+						</p>
+					</li>
+				</ul>
+
+				<blockquote class="blockquote">
+					<p class="blockquote__text">
+						Solis Group serves as a liquidity nexus that gives
+						stablecoin issuers, holders and exchanges certainty over
+						access and liquidity
+					</p>
+					<footer class="blockquote__footer">
+						Lennon Burnett, <cite>Solis Group CEO</cite>
+					</footer>
+				</blockquote>
+
+				<section class="video">
+					<div class="video__frame-wrapper" id="video-wrapper">
+						<button class="video__play" id="video-play"></button>
+					</div>
+
+					<div class="video__inner">
+						<h3 class="video__title">
+							A <span>powerful API</span> , easy to use user
+							interface
+						</h3>
+						<p class="video__subtitle">
+							Our API allows all members to interact with
+							Stablehouse’s platform, from effecting transfers to
+							deposits, withdrawals, creation and redemption and
+							reporting.
+						</p>
+					</div>
+				</section>
+
+				<section class="features">
+					<div class="features__card card">
+						<header class="card__header">
+							<h4 class="card__title">Sell</h4>
+							<img
+								class="card__icon"
+								src="images/card-b.svg"
+								alt="b"
+							/>
+							<img
+								class="card__arrow"
+								src="images/card-arrow.svg"
+								alt="arrow"
+							/>
+							<h4 class="card__title">Buy</h4>
+							<img
+								class="card__icon"
+								src="images/card-t.svg"
+								alt="t"
+							/>
+						</header>
+
+						<section class="card__rate">
+							<h4 class="card__title">Rate:</h4>
+							<p class="card__rate-number">10127.</p>
+							<span class="card__rate-float">49</span>
+						</section>
+
+						<form class="card__form card-form">
+							<div class="card-form__inner">
+								<div class="card-form__item">
+									<label class="card-form__label" for="pay"
+										>Pay:</label
+									>
+									<input
+										class="card-form__input"
+										type="number"
+										id="pay"
+										value="1"
+									/>
+								</div>
+
+								<div class="card-form__item">
+									<label
+										class="card-form__label"
+										for="receive"
+										>Receive:</label
+									>
+									<input
+										class="card-form__input"
+										type="number"
+										id="receive"
+										value="0"
+									/>
+								</div>
+							</div>
+
+							<div class="card-form__inner">
+								<h4 class="card__title">Maker fees:</h4>
+								<output class="card-form__fee"></output>
+							</div>
+
+							<div class="card-form__inner">
+								<h4 class="card__title">Exchange fees:</h4>
+								<output class="card-form__fee"></output>
+							</div>
+						</form>
+
+						<footer class="card__footer card-footer">
+							<div class="card-footer__inner">
+								<input
+									class="card-footer__input"
+									type="radio"
+									name="card-radio"
+									id="exchange"
+									checked
+								/>
+								<label class="card-footer__label" for="exchange"
+									>On Exchange</label
+								>
+								<span class="card-footer__radiomark"></span>
+							</div>
+
+							<div class="card-footer__inner">
+								<input
+									class="card-footer__input"
+									type="radio"
+									name="card-radio"
+									id="wallet"
+								/>
+								<label class="card-footer__label" for="wallet"
+									>On Wallet</label
+								>
+								<span class="card-footer__radiomark"></span>
+							</div>
+						</footer>
+					</div>
+
+					<div class="features__details features-details">
+						<div class="features-details__item">
+							<h4 class="features-details__title">
+								On-Exchange Trading
+							</h4>
+							<p class="features-details__subtitle">Instant</p>
+							<p class="features-details__subtitle">
+								Passive Inventory earns fees
+							</p>
+						</div>
+						<div class="features-details__item">
+							<h4 class="features-details__title">
+								On-Chain Swaps
+							</h4>
+							<p class="features-details__subtitle">
+								Low Counterparty risk
+							</p>
+							<p class="features-details__subtitle">
+								Direct transfers
+							</p>
+						</div>
+						<div class="features-details__item">
+							<h4 class="features-details__title">
+								Time Settlement Swaps
+							</h4>
+							<p class="features-details__subtitle">
+								LBTC / Lightning and other sidechain swaps
+							</p>
+						</div>
+						<a class="features-details__link" href="#">join now</a>
+					</div>
+				</section>
+
+				<section class="reviews">
+					<div class="reviews__descr">
+						<h3 class="reviews__title">
+							Client <span>reviews</span>
+						</h3>
+						<p class="reviews__subtitle">
+							Happy clients, happy us. Read our client reviews
+							about the work process and results.
+                        </p>
+                    </div>
+
+                    <div class="glide">
+                        <div class="glide__arrows" data-glide-el="controls">
+                            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+                        </div>
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide glide__slide--first">
+                                    <blockquote class="glide__quote">
+                                        <p class="glide__text">
+                                            Solis did a great job.
+                                            Whether providing direct
+                                            development support or
+                                            giving us the opportunity to
+                                            make our development
+                                            updates, Solis's web design
+                                            expertise and support
+                                            services were top notch! It
+                                            didn't take long to stand up
+                                            our website, and we were
+                                            pleased with the design and
+                                            layout of the graphics and
+                                            information.
+                                        </p>
+                                        <footer class="glide__name">
+                                            Dr. Jamika Burge
+                                        </footer>
+                                    </blockquote>
+                                </li>
+                                <li class="glide__slide glide__slide--second">
+                                    <blockquote class="glide__quote">
+                                        <p class="glide__text">
+                                            Solis is a cutting edge
+                                            company and knows the
+                                            importance of excellence.
+                                            Having been in business for
+                                            21 years, I know when I’ve
+                                            found a competent
+                                            professional and more
+                                            importantly a company with
+                                            integrity. I highly
+                                            recommend this company and
+                                            am available for further
+                                            reference if needed.
+                                        </p>
+                                        <footer class="glide__name">
+                                            Evie-Rose Prosse
+                                        </footer>
+                                    </blockquote>
+                                </li>
+                                <li class="glide__slide glide__slide--third">
+                                    <blockquote class="glide__quote">
+                                        <p class="glide__text">
+                                            I can’t say enough about how
+                                            knowledgeable Toinette Rorie
+                                            is in the area of Web
+                                            Development. She indeed is a
+                                            developer and can build a
+                                            site from scratch. She
+                                            understands functionality
+                                            and is great at constructing
+                                            a site that is robust and
+                                            fully functioning.
+                                        </p>
+                                        <footer class="glide__name">
+                                            Elvis Mooney
+                                        </footer>
+                                    </blockquote>
+                                </li>
+                                <li class="glide__slide glide__slide--fourth">
+                                    <blockquote class="glide__quote">
+                                        <p class="glide__text">
+                                            Solis Solutions was referred
+                                            to me by a trustworthy
+                                            friend. After reviewing his
+                                            website, I decided to give
+                                            Solis company Solutions a
+                                            try. I am happy to say I was
+                                            not disappointed! From the
+                                            onset, I knew PWDS was a
+                                            team I could work with. I
+                                            worked with Toinette, who
+                                            listened to my desires and
+                                            offered professional advice
+                                            and expertise.
+                                        </p>
+                                        <footer class="glide__name">
+                                            Taha Mccartney
+                                        </footer>
+                                    </blockquote>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+				</section>
+
+				<section class="contact">
+					<div class="contact__descr">
+						<h3 class="contact__title">
+							Contact <span>our sales team</span>
+						</h3>
+						<p class="contact__subtitle">
+							Our team is happy to answer your sales questions.<br />Fill
+							out the form and we’ll be in touch as soon as
+							possible.
+						</p>
+					</div>
+
+					<form class="contact__form">
+						<input
+							class="contact__input"
+							type="text"
+							placeholder="Your name"
+						/>
+						<input
+							class="contact__input"
+							type="email"
+							placeholder="Email"
+						/>
+						<input
+							class="contact__input"
+							type="text"
+							placeholder="Tell more"
+						/>
+						<button class="contact__submit" type="submit">
+							send request
+						</button>
+					</form>
+				</section>
+
+				<footer class="footer">
+					<p class="footer__text">
+						© 2020 Solisgroup. All Rights Reserved.
+					</p>
+					<p class="footer__text">
+						made by
+						<span class="footer__company">Zgraya.digital</span>
+					</p>
+					<nav class="footer__nav">
+						<ul class="footer__list">
+							<li>
+								<a class="footer__link" href="#"
+									>User Agreement</a
+								>
+							</li>
+							<li>
+								<a class="footer__link" href="#"
+									>Privacy Policy</a
+								>
+							</li>
+						</ul>
+					</nav>
+				</footer>
+			</div>
+        </main> -->
+        
+        <script src="../node_modules/@glidejs/glide/dist/glide.min.js"></script>
+		<script src="./index.js"></script>
+	</body>
+</html>
